@@ -1,0 +1,45 @@
+body {
+    background: #edf2f7;
+}
+
+.tab input,
+.tab-content {
+    display: none;
+}
+
+.tab {
+    color: #000000;
+    margin-bottom: 5px;
+    background: #acadad;
+    width: 400px;
+    box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tab-title {
+    padding: 10px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-align-last: center; 
+}
+
+.tab-content {
+    padding: 10px 20px;
+    background-color: #ffffff;
+}
+
+.tab :checked+.tab-title {
+    background-color: #acadad;
+    border-radius: 8px;
+    color: rgb(2, 2, 2);
+}
+
+.tab :checked~.tab-content {
+    display: block;
+}
